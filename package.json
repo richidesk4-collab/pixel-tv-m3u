@@ -1,0 +1,12 @@
+{
+  "name": "pixel-tv-m3u",
+  "version": "1.0.0",
+  "description": "Generador automático de lista M3U para Pixel TV",
+  "main": "generar_lista.js",
+  "scripts": {
+    "generate": "node generar_lista.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9"
+  }
+}
