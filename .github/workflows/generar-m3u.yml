@@ -19,8 +19,7 @@ jobs:
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: npm
+          node-version: 24
 
       - name: Instalar dependencias
         run: npm install
@@ -37,6 +36,8 @@ jobs:
           grep -q '^#EXTM3U' lista_limpia.m3u
           grep -q '^#EXTINF:' lista_limpia.m3u
           echo "M3U válido."
+          echo "Cantidad de líneas:"
+          wc -l lista_limpia.m3u
 
       - name: Publicar lista
         run: |
