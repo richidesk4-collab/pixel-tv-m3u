@@ -24,10 +24,28 @@ jobs:
       - name: Instalar dependencias
         run: npm install
 
+      - name: Verificar Secrets
+        env:
+          PROVIDER_TV_URL: ${{ secrets.PROVIDER_TV_URL }}
+          PROVIDER_VOD_URL: ${{ secrets.PROVIDER_VOD_URL }}
+        run: |
+          if [ -z "$PROVIDER_TV_URL" ]; then
+            echo "ERROR: PROVIDER_TV_URL está vacío o no existe."
+            exit 1
+          fi
+
+          if [ -z "$PROVIDER_VOD_URL" ]; then
+            echo "ERROR: PROVIDER_VOD_URL está vacío o no existe."
+            exit 1
+          fi
+
+          echo "PROVIDER_TV_URL: configurado"
+          echo "PROVIDER_VOD_URL: configurado"
+
       - name: Generar lista M3U
         env:
-          PROVIDER_1_URL: ${{ secrets.PROVIDER_1_URL }}
-          PROVIDER_2_URL: ${{ secrets.PROVIDER_2_URL }}
+          PROVIDER_TV_URL: ${{ secrets.PROVIDER_TV_URL }}
+          PROVIDER_VOD_URL: ${{ secrets.PROVIDER_VOD_URL }}
         run: node generar_lista.js
 
       - name: Verificar lista generada
@@ -49,7 +67,7 @@ jobs:
       - name: Publicar lista
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email "41898282+users.noreply.github.com"
 
           git add lista_limpia.m3u
 
