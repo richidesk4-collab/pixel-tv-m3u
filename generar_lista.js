@@ -2,43 +2,22 @@ const fs = require("fs");
 const axios = require("axios");
 
 // ============================================================
-// PIXEL TV - GENERADOR Y VERIFICADOR M3U
-// ============================================================
-//
-// Secrets esperados:
-//
-// PROVIDER_TV_URL  = M3U de TV en vivo
-// PROVIDER_VOD_URL = M3U de películas + series
-//
-// Salidas:
-//
-// lista_limpia.m3u
-// reporte.json
+// PIXEL TV - GENERADOR M3U
 // ============================================================
 
-const PROVIDERS = [
+const PROVIDER_TV_URL = process.env.PROVIDER_TV_URL;
+const PROVIDER_VOD_URL = process.env.PROVIDER_VOD_URL;
+
+const proveedores = [
   {
-    name: "TV",
-    type: "LIVE",
-    url: process.env.PROVIDER_TV_URL,
+    url: PROVIDER_TV_URL,
+    tipo: "TV",
   },
   {
-    name: "VOD",
-    type: "VOD_SERIES",
-    url: process.env.PROVIDER_VOD_URL,
+    url: PROVIDER_VOD_URL,
+    tipo: "VOD",
   },
-].filter((provider) => Boolean(provider.url));
-
-// ============================================================
-// CONFIGURACIÓN
-// ============================================================
-
-const DOWNLOAD_TIMEOUT = 120000;
-const VERIFY_TIMEOUT = 8000;
-
-// Cantidad máxima de verificaciones simultáneas.
-// Se mantiene moderada para evitar saturar proveedores.
-const VERIFY_CONCURRENCY = 20;
+].filter((proveedor) => Boolean(proveedor.url));
 
 // ============================================================
 // FILTROS
@@ -126,11 +105,11 @@ function normalizarTexto(texto) {
     .trim();
 }
 
-function debeExcluir(texto) {
-  const normalizado = normalizarTexto(texto);
+function debeExcluir(extinf) {
+  const texto = normalizarTexto(extinf);
 
   return filtroExclusiones.some((filtro) =>
-    normalizado.includes(normalizarTexto(filtro))
+    texto.includes(normalizarTexto(filtro))
   );
 }
 
@@ -144,73 +123,67 @@ function extraerNombre(extinf) {
   return extinf.trim();
 }
 
-function extraerAtributo(extinf, atributo) {
-  const regex = new RegExp(
-    `${atributo}="([^"]*)"`,
-    "i"
-  );
+// ============================================================
+// DETECTAR CATEGORÍA
+// ============================================================
 
-  const match = extinf.match(regex);
+function detectarCategoria(extinf, tipoProveedor) {
+  const texto = normalizarTexto(extinf);
 
-  return match ? match[1].trim() : "";
-}
+  if (tipoProveedor === "TV") {
+    if (
+      texto.includes("deportes") ||
+      texto.includes("sport") ||
+      texto.includes("futbol") ||
+      texto.includes("fútbol")
+    ) {
+      return "Deportes";
+    }
 
-function detectarTipo(extinf, url, proveedorTipo) {
-  const texto = normalizarTexto(
-    `${extinf} ${url}`
-  );
+    if (
+      texto.includes("noticia") ||
+      texto.includes("news")
+    ) {
+      return "Noticias";
+    }
 
-  // Si el proveedor es exclusivamente TV,
-  // todo se considera LIVE.
-  if (proveedorTipo === "LIVE") {
-    return "LIVE";
+    if (
+      texto.includes("infantil") ||
+      texto.includes("kids") ||
+      texto.includes("children")
+    ) {
+      return "Infantil";
+    }
+
+    return "TV";
   }
 
-  // Intentamos identificar series/episodios.
-  const indicadoresSeries = [
-    "series",
-    "serie",
-    "season",
-    "temporada",
-    "episode",
-    "episodio",
-    "episod",
-    "s01",
-    "s02",
-    "s03",
-    "s04",
-    "s05",
-    "s06",
-    "s07",
-    "s08",
-    "s09",
-    "s10",
-  ];
+  // VOD
+  if (
+    texto.includes("serie") ||
+    texto.includes("series")
+  ) {
+    return "Series";
+  }
 
   if (
-    indicadoresSeries.some((indicador) =>
-      texto.includes(indicador)
-    )
+    texto.includes("pelicula") ||
+    texto.includes("películas") ||
+    texto.includes("movie") ||
+    texto.includes("movies") ||
+    texto.includes("cine")
   ) {
-    return "SERIES";
+    return "Películas";
   }
 
-  // También reconocemos estructuras habituales
-  // de URLs IPTV para series.
-  if (texto.includes("/series/")) {
-    return "SERIES";
-  }
-
-  // Si no podemos determinar que es una serie,
-  // queda como película/VOD.
-  return "MOVIE";
+  return "VOD";
 }
 
 // ============================================================
 // PARSER M3U
 // ============================================================
 
-function parsearM3U(contenido, proveedor) {
+function parsearM3U(contenido, proveedor, tipoProveedor) {
   const lineas = contenido.split(/\r?\n/);
 
   const elementos = [];
@@ -231,58 +204,27 @@ function parsearM3U(contenido, proveedor) {
 
     if (
       extinfActual &&
-      (linea.startsWith("http://") ||
-        linea.startsWith("https://"))
+      (
+        linea.startsWith("http://") ||
+        linea.startsWith("https://")
+      )
     ) {
       const streamUrl = linea;
 
-      const nombre = extraerNombre(extinfActual);
-
-      const grupo = extraerAtributo(
-        extinfActual,
-        "group-title"
-      );
-
-      const tvgId = extraerAtributo(
-        extinfActual,
-        "tvg-id"
-      );
-
-      const tvgName = extraerAtributo(
-        extinfActual,
-        "tvg-name"
-      );
-
-      const tvgLogo = extraerAtributo(
-        extinfActual,
-        "tvg-logo"
-      );
-
-      const textoFiltro = [
-        extinfActual,
-        nombre,
-        grupo,
-        tvgName,
-        streamUrl,
-      ].join(" ");
-
-      if (!debeExcluir(textoFiltro)) {
-        const tipo = detectarTipo(
+      if (!debeExcluir(extinfActual)) {
+        const nombre = extraerNombre(extinfActual);
+        const categoria = detectarCategoria(
           extinfActual,
-          streamUrl,
-          proveedor.type
+          tipoProveedor
         );
 
         elementos.push({
           nombre,
           extinf: extinfActual,
           url: streamUrl,
-          proveedor: proveedor.name,
-          tipo,
-          grupo,
-          tvgId,
-          tvgName,
-          tvgLogo,
+          proveedor,
+          tipo: tipoProveedor,
+          categoria,
         });
       }
 
@@ -294,64 +236,21 @@ function parsearM3U(contenido, proveedor) {
 }
 
 // ============================================================
-// VALIDACIÓN DE RESPUESTA DEL PROVEEDOR
-// ============================================================
-
-function validarPayloadM3U(contenido) {
-  const limpio = String(contenido || "")
-    .replace(/^\uFEFF/, "")
-    .trimStart();
-
-  if (!limpio) {
-    throw new Error(
-      "El proveedor devolvió una respuesta vacía."
-    );
-  }
-
-  const inicio = limpio
-    .slice(0, 500)
-    .toLowerCase();
-
-  if (
-    inicio.startsWith("<!doctype html") ||
-    inicio.startsWith("<html") ||
-    inicio.startsWith("{") ||
-    inicio.startsWith("[") ||
-    inicio.includes("<script") ||
-    inicio.includes("require(") ||
-    inicio.includes("const axios") ||
-    inicio.includes("const fs")
-  ) {
-    throw new Error(
-      "La respuesta no parece ser una lista M3U válida."
-    );
-  }
-
-  if (!limpio.includes("#EXTINF:")) {
-    throw new Error(
-      "La respuesta no contiene entradas #EXTINF."
-    );
-  }
-
-  return limpio;
-}
-
-// ============================================================
 // DESCARGAR PROVEEDOR
 // ============================================================
 
-async function descargarLista(proveedor) {
-  console.log("\n==========================================");
-  console.log(`PROVEEDOR: ${proveedor.name}`);
-  console.log(`TIPO: ${proveedor.type}`);
+async function descargarLista(url, proveedor, tipoProveedor) {
+  console.log("");
+  console.log("==========================================");
+  console.log(`PROVEEDOR ${proveedor} - ${tipoProveedor}`);
   console.log("==========================================");
 
   console.log("Descargando lista...");
 
   const inicio = Date.now();
 
-  const response = await axios.get(proveedor.url, {
-    timeout: DOWNLOAD_TIMEOUT,
+  const response = await axios.get(url, {
+    timeout: 120000,
     responseType: "text",
     maxContentLength: Infinity,
     maxBodyLength: Infinity,
@@ -363,22 +262,55 @@ async function descargarLista(proveedor) {
   console.log(`HTTP STATUS: ${response.status}`);
   console.log(`TIEMPO: ${tiempo} ms`);
 
-  if (
-    response.status < 200 ||
-    response.status >= 300
-  ) {
+  if (response.status < 200 || response.status >= 300) {
     throw new Error(
       `El proveedor respondió HTTP ${response.status}`
     );
   }
 
-  const contenido = validarPayloadM3U(
-    response.data
-  );
+  const contenido = String(response.data || "");
+
+  if (!contenido.trim()) {
+    throw new Error(
+      "El proveedor devolvió una respuesta vacía."
+    );
+  }
+
+  const inicioContenido = contenido
+    .replace(/^\uFEFF/, "")
+    .trimStart()
+    .slice(0, 500)
+    .toLowerCase();
+
+  // ==========================================================
+  // DETECTAR RESPUESTAS INCORRECTAS
+  // ==========================================================
+
+  if (
+    inicioContenido.startsWith("<!doctype html") ||
+    inicioContenido.startsWith("<html") ||
+    inicioContenido.startsWith("{") ||
+    inicioContenido.startsWith("[") ||
+    inicioContenido.includes("<script") ||
+    inicioContenido.includes("require(") ||
+    inicioContenido.includes("const axios") ||
+    inicioContenido.includes("const fs")
+  ) {
+    throw new Error(
+      "La respuesta del proveedor no parece ser una lista M3U válida."
+    );
+  }
+
+  if (!contenido.includes("#EXTINF:")) {
+    throw new Error(
+      "La respuesta no contiene entradas #EXTINF."
+    );
+  }
 
   const elementos = parsearM3U(
     contenido,
-    proveedor
+    proveedor,
+    tipoProveedor
   );
 
   console.log(
@@ -386,283 +318,6 @@ async function descargarLista(proveedor) {
   );
 
   return elementos;
-}
-
-// ============================================================
-// SANITIZAR URL PARA LOGS
-// ============================================================
-
-function urlSegura(url) {
-  try {
-    const parsed = new URL(url);
-
-    const parametrosSensibles = [
-      "password",
-      "pass",
-      "pwd",
-      "token",
-      "auth",
-      "username",
-      "user",
-    ];
-
-    for (const parametro of parametrosSensibles) {
-      if (parsed.searchParams.has(parametro)) {
-        parsed.searchParams.set(
-          parametro,
-          "***"
-        );
-      }
-    }
-
-    return parsed.toString();
-  } catch {
-    return "***";
-  }
-}
-
-// ============================================================
-// VERIFICACIÓN DE STREAM
-// ============================================================
-//
-// Objetivo:
-// comprobar rápidamente si la URL responde.
-//
-// NO descargamos películas ni episodios completos.
-//
-// Estados:
-//
-// ONLINE
-// OFFLINE
-// UNKNOWN
-// ============================================================
-
-async function verificarStream(elemento) {
-  const headers = {
-    "User-Agent":
-      "PixelTV-M3U-Checker/1.0",
-    Accept: "*/*",
-    Range: "bytes=0-1024",
-  };
-
-  try {
-    let response;
-
-    try {
-      response = await axios.get(
-        elemento.url,
-        {
-          timeout: VERIFY_TIMEOUT,
-          responseType: "stream",
-          headers,
-          maxContentLength: 2048,
-          maxBodyLength: 2048,
-          validateStatus: () => true,
-        }
-      );
-    } catch (getError) {
-      // Algunos servidores rechazan GET/Range.
-      // Intentamos HEAD como segunda comprobación.
-      response = await axios.head(
-        elemento.url,
-        {
-          timeout: VERIFY_TIMEOUT,
-          headers: {
-            "User-Agent":
-              "PixelTV-M3U-Checker/1.0",
-          },
-          validateStatus: () => true,
-        }
-      );
-    }
-
-    const status = response.status;
-
-    // Cerramos inmediatamente cualquier stream HTTP.
-    if (
-      response.data &&
-      typeof response.data.destroy === "function"
-    ) {
-      response.data.destroy();
-    }
-
-    if (
-      status >= 200 &&
-      status < 300
-    ) {
-      return {
-        estado: "ONLINE",
-        httpStatus: status,
-      };
-    }
-
-    // 206 Partial Content también es una respuesta
-    // perfectamente válida para streaming.
-    if (status === 206) {
-      return {
-        estado: "ONLINE",
-        httpStatus: status,
-      };
-    }
-
-    // Algunos servidores IPTV requieren autorización,
-    // por lo que no podemos afirmar que el contenido
-    // esté muerto solamente por un 401/403.
-    if (
-      status === 401 ||
-      status === 403 ||
-      status === 405 ||
-      status === 429
-    ) {
-      return {
-        estado: "UNKNOWN",
-        httpStatus: status,
-      };
-    }
-
-    if (
-      status === 404 ||
-      status === 410
-    ) {
-      return {
-        estado: "OFFLINE",
-        httpStatus: status,
-      };
-    }
-
-    if (status >= 500) {
-      return {
-        estado: "UNKNOWN",
-        httpStatus: status,
-      };
-    }
-
-    return {
-      estado: "UNKNOWN",
-      httpStatus: status,
-    };
-  } catch (error) {
-    const code = error.code || "";
-
-    if (
-      code === "ECONNABORTED" ||
-      code === "ETIMEDOUT" ||
-      code === "ECONNRESET" ||
-      code === "ENOTFOUND" ||
-      code === "ECONNREFUSED"
-    ) {
-      return {
-        estado: "OFFLINE",
-        httpStatus: null,
-        error: code,
-      };
-    }
-
-    return {
-      estado: "UNKNOWN",
-      httpStatus: null,
-      error: code || "NETWORK_ERROR",
-    };
-  }
-}
-
-// ============================================================
-// VERIFICACIÓN EN PARALELO CON CONCURRENCIA LIMITADA
-// ============================================================
-
-async function verificarTodos(elementos) {
-  console.log("\n==========================================");
-  console.log("VERIFICACIÓN DE STREAMS");
-  console.log("==========================================");
-
-  console.log(
-    `Streams a comprobar: ${elementos.length}`
-  );
-
-  console.log(
-    `Concurrencia: ${VERIFY_CONCURRENCY}`
-  );
-
-  let completados = 0;
-
-  const resultados = new Array(
-    elementos.length
-  );
-
-  async function worker() {
-    while (true) {
-      const indice = siguienteIndice++;
-
-      if (indice >= elementos.length) {
-        return;
-      }
-
-      const elemento = elementos[indice];
-
-      const resultado =
-        await verificarStream(elemento);
-
-      resultados[indice] = {
-        ...elemento,
-        estado: resultado.estado,
-        httpStatus: resultado.httpStatus || null,
-        error: resultado.error || null,
-      };
-
-      completados++;
-
-      if (
-        completados % 50 === 0 ||
-        completados === elementos.length
-      ) {
-        console.log(
-          `Verificados: ${completados}/${elementos.length}`
-        );
-      }
-    }
-  }
-
-  let siguienteIndice = 0;
-
-  const cantidadWorkers = Math.min(
-    VERIFY_CONCURRENCY,
-    elementos.length
-  );
-
-  const workers = [];
-
-  for (
-    let i = 0;
-    i < cantidadWorkers;
-    i++
-  ) {
-    workers.push(worker());
-  }
-
-  await Promise.all(workers);
-
-  return resultados;
-}
-
-// ============================================================
-// ELIMINAR DUPLICADOS
-// ============================================================
-
-function eliminarDuplicados(elementos) {
-  const mapa = new Map();
-
-  for (const elemento of elementos) {
-    const clave = [
-      normalizarTexto(elemento.nombre),
-      normalizarTexto(elemento.url),
-    ].join("|");
-
-    if (!mapa.has(clave)) {
-      mapa.set(clave, elemento);
-    }
-  }
-
-  return Array.from(mapa.values());
 }
 
 // ============================================================
@@ -675,13 +330,21 @@ function generarM3U(elementos) {
   salida.push("#EXTM3U");
 
   for (const elemento of elementos) {
-    salida.push(elemento.extinf);
+    let extinf = elemento.extinf;
+
+    // Agregar información útil sin romper el EXTINF original.
+    if (!extinf.includes('group-title="')) {
+      extinf = extinf.replace(
+        "#EXTINF:",
+        `#EXTINF: group-title="${elemento.categoria}",`
+      );
+    }
+
+    salida.push(extinf);
     salida.push(elemento.url);
   }
 
-  return (
-    salida.join("\n") + "\n"
-  );
+  return salida.join("\n") + "\n";
 }
 
 // ============================================================
@@ -697,8 +360,13 @@ function validarM3U(contenido) {
     );
   }
 
-  const lineas =
-    texto.split(/\r?\n/);
+  if (!texto.includes("#EXTINF:")) {
+    throw new Error(
+      "VALIDACIÓN FALLIDA: no existen entradas #EXTINF."
+    );
+  }
+
+  const lineas = texto.split(/\r?\n/);
 
   let extinfPendiente = false;
   let entradas = 0;
@@ -710,9 +378,7 @@ function validarM3U(contenido) {
       continue;
     }
 
-    if (
-      actual.startsWith("#EXTINF:")
-    ) {
+    if (actual.startsWith("#EXTINF:")) {
       extinfPendiente = true;
       continue;
     }
@@ -745,128 +411,27 @@ function validarM3U(contenido) {
 }
 
 // ============================================================
-// ESTADÍSTICAS
-// ============================================================
-
-function crearEstadisticas(elementos) {
-  const estadisticas = {
-    generadoEn: new Date().toISOString(),
-
-    total: elementos.length,
-
-    live: {
-      total: 0,
-      online: 0,
-      offline: 0,
-      unknown: 0,
-    },
-
-    movies: {
-      total: 0,
-      online: 0,
-      offline: 0,
-      unknown: 0,
-    },
-
-    series: {
-      total: 0,
-      online: 0,
-      offline: 0,
-      unknown: 0,
-    },
-
-    proveedores: {},
-  };
-
-  for (const elemento of elementos) {
-    let categoria;
-
-    if (elemento.tipo === "LIVE") {
-      categoria = estadisticas.live;
-    } else if (
-      elemento.tipo === "MOVIE"
-    ) {
-      categoria = estadisticas.movies;
-    } else {
-      categoria = estadisticas.series;
-    }
-
-    categoria.total++;
-
-    if (elemento.estado === "ONLINE") {
-      categoria.online++;
-    } else if (
-      elemento.estado === "OFFLINE"
-    ) {
-      categoria.offline++;
-    } else {
-      categoria.unknown++;
-    }
-
-    if (
-      !estadisticas.proveedores[
-        elemento.proveedor
-      ]
-    ) {
-      estadisticas.proveedores[
-        elemento.proveedor
-      ] = {
-        total: 0,
-        online: 0,
-        offline: 0,
-        unknown: 0,
-      };
-    }
-
-    const proveedor =
-      estadisticas.proveedores[
-        elemento.proveedor
-      ];
-
-    proveedor.total++;
-
-    if (
-      elemento.estado === "ONLINE"
-    ) {
-      proveedor.online++;
-    } else if (
-      elemento.estado === "OFFLINE"
-    ) {
-      proveedor.offline++;
-    } else {
-      proveedor.unknown++;
-    }
-  }
-
-  return estadisticas;
-}
-
-// ============================================================
 // PROCESO PRINCIPAL
 // ============================================================
 
 async function main() {
+  console.log("==========================================");
+  console.log("       PIXEL TV - GENERADOR M3U");
+  console.log("==========================================");
+
   console.log(
-    "=========================================="
+    `Proveedor TV configurado: ${PROVIDER_TV_URL ? "SI" : "NO"}`
   );
 
   console.log(
-    "       PIXEL TV - GENERADOR M3U"
+    `Proveedor VOD configurado: ${PROVIDER_VOD_URL ? "SI" : "NO"}`
   );
 
-  console.log(
-    "=========================================="
-  );
-
-  if (PROVIDERS.length === 0) {
+  if (proveedores.length === 0) {
     throw new Error(
-      "No hay proveedores configurados. Revisa PROVIDER_TV_URL y PROVIDER_VOD_URL."
+      "No hay proveedores configurados. Verificá PROVIDER_TV_URL y PROVIDER_VOD_URL en GitHub Secrets."
     );
   }
-
-  console.log(
-    `Proveedores configurados: ${PROVIDERS.length}`
-  );
 
   const todosLosElementos = [];
 
@@ -874,136 +439,95 @@ async function main() {
   // DESCARGAR PROVEEDORES
   // ==========================================================
 
-  for (const proveedor of PROVIDERS) {
-    try {
-      const elementos =
-        await descargarLista(proveedor);
+  for (let i = 0; i < proveedores.length; i++) {
+    const proveedor = proveedores[i];
 
-      todosLosElementos.push(
-        ...elementos
+    try {
+      const elementos = await descargarLista(
+        proveedor.url,
+        i + 1,
+        proveedor.tipo
       );
+
+      todosLosElementos.push(...elementos);
     } catch (error) {
       console.error(
-        `ERROR ${proveedor.name}: ${error.message}`
+        `ERROR PROVEEDOR ${i + 1} (${proveedor.tipo}):`,
+        error.message
       );
     }
   }
 
-  if (
-    todosLosElementos.length === 0
-  ) {
+  // ==========================================================
+  // COMPROBAR QUE SE OBTUVO CONTENIDO
+  // ==========================================================
+
+  if (todosLosElementos.length === 0) {
     throw new Error(
-      "No se obtuvo ningún elemento válido de los proveedores."
+      "Los proveedores respondieron, pero no se obtuvo ningún elemento válido."
     );
   }
 
-  console.log("\n==========================================");
-  console.log("ELEMENTOS ANTES DE DUPLICADOS");
-  console.log("==========================================");
-
-  console.log(
-    `Total: ${todosLosElementos.length}`
-  );
-
   // ==========================================================
-  // DUPLICADOS
+  // ELIMINAR DUPLICADOS
   // ==========================================================
 
-  const elementosUnicos =
-    eliminarDuplicados(
-      todosLosElementos
-    );
+  const canalesUnicos = new Map();
 
-  console.log(
-    `Duplicados eliminados: ${
-      todosLosElementos.length -
-      elementosUnicos.length
-    }`
-  );
+  for (const elemento of todosLosElementos) {
+    const clave =
+      normalizarTexto(elemento.nombre) +
+      "|" +
+      normalizarTexto(elemento.categoria);
 
-  console.log(
-    `Elementos únicos: ${elementosUnicos.length}`
-  );
-
-  // ==========================================================
-  // VERIFICACIÓN
-  // ==========================================================
-
-  const verificados =
-    await verificarTodos(
-      elementosUnicos
-    );
-
-  // ==========================================================
-  // ESTADÍSTICAS
-  // ==========================================================
-
-  const estadisticas =
-    crearEstadisticas(
-      verificados
-    );
-
-  console.log("\n==========================================");
-  console.log("RESULTADOS DE VERIFICACIÓN");
-  console.log("==========================================");
-
-  console.log(
-    `LIVE  → Total: ${estadisticas.live.total} | Online: ${estadisticas.live.online} | Offline: ${estadisticas.live.offline} | Unknown: ${estadisticas.live.unknown}`
-  );
-
-  console.log(
-    `MOVIE → Total: ${estadisticas.movies.total} | Online: ${estadisticas.movies.online} | Offline: ${estadisticas.movies.offline} | Unknown: ${estadisticas.movies.unknown}`
-  );
-
-  console.log(
-    `SERIES → Total: ${estadisticas.series.total} | Online: ${estadisticas.series.online} | Offline: ${estadisticas.series.offline} | Unknown: ${estadisticas.series.unknown}`
-  );
-
-  // ==========================================================
-  // CONSERVAR ONLINE + UNKNOWN
-  // ==========================================================
-  //
-  // NO eliminamos automáticamente 401/403/429.
-  // Algunos proveedores bloquean verificadores externos
-  // aunque la reproducción real en la app funcione.
-  //
-  // Eliminamos solamente OFFLINE.
-  // ==========================================================
+    if (!canalesUnicos.has(clave)) {
+      canalesUnicos.set(clave, elemento);
+    }
+  }
 
   const elementosFinales =
-    verificados.filter(
-      (elemento) =>
-        elemento.estado !== "OFFLINE"
-    );
-
-  if (
-    elementosFinales.length === 0
-  ) {
-    throw new Error(
-      "La verificación dejó 0 elementos. No se reemplazará la lista anterior."
-    );
-  }
+    Array.from(canalesUnicos.values());
 
   // ==========================================================
-  // GENERAR M3U
+  // ESTADÍSTICAS POR TIPO
+  // ==========================================================
+
+  const cantidadTV =
+    elementosFinales.filter(
+      (elemento) => elemento.tipo === "TV"
+    ).length;
+
+  const cantidadVOD =
+    elementosFinales.filter(
+      (elemento) => elemento.tipo === "VOD"
+    ).length;
+
+  const cantidadPeliculas =
+    elementosFinales.filter(
+      (elemento) => elemento.categoria === "Películas"
+    ).length;
+
+  const cantidadSeries =
+    elementosFinales.filter(
+      (elemento) => elemento.categoria === "Series"
+    ).length;
+
+  // ==========================================================
+  // GENERAR
   // ==========================================================
 
   const contenidoM3U =
-    generarM3U(
-      elementosFinales
-    );
+    generarM3U(elementosFinales);
 
   // ==========================================================
   // VALIDAR
   // ==========================================================
 
   const cantidadFinal =
-    validarM3U(
-      contenidoM3U
-    );
+    validarM3U(contenidoM3U);
 
   // ==========================================================
-  // GUARDAR LISTA
+  // GUARDAR
   // ==========================================================
 
   fs.writeFileSync(
@@ -1013,65 +537,44 @@ async function main() {
   );
 
   // ==========================================================
-  // REPORTE
+  // ESTADÍSTICAS
   // ==========================================================
 
-  const reporte = {
-    ...estadisticas,
+  const duplicadosEliminados =
+    todosLosElementos.length -
+    elementosFinales.length;
 
-    listaFinal: {
-      elementos: elementosFinales.length,
-      entradasM3U: cantidadFinal,
-    },
-
-    eliminadosOffline:
-      verificados.length -
-      elementosFinales.length,
-  };
-
-  fs.writeFileSync(
-    "reporte.json",
-    JSON.stringify(
-      reporte,
-      null,
-      2
-    ),
-    "utf8"
-  );
-
-  // ==========================================================
-  // FINAL
-  // ==========================================================
+  console.log("");
+  console.log("==========================================");
+  console.log("          PROCESO COMPLETADO");
+  console.log("==========================================");
 
   console.log(
-    "\n=========================================="
+    `Elementos procesados: ${todosLosElementos.length}`
   );
 
   console.log(
-    "          PROCESO COMPLETADO"
-  );
-
-  console.log(
-    "=========================================="
-  );
-
-  console.log(
-    `Elementos originales: ${todosLosElementos.length}`
-  );
-
-  console.log(
-    `Elementos únicos: ${elementosUnicos.length}`
-  );
-
-  console.log(
-    `Offline eliminados: ${
-      verificados.length -
-      elementosFinales.length
-    }`
+    `Duplicados eliminados: ${duplicadosEliminados}`
   );
 
   console.log(
     `Elementos finales: ${elementosFinales.length}`
+  );
+
+  console.log(
+    `TV: ${cantidadTV}`
+  );
+
+  console.log(
+    `VOD: ${cantidadVOD}`
+  );
+
+  console.log(
+    `Películas: ${cantidadPeliculas}`
+  );
+
+  console.log(
+    `Series: ${cantidadSeries}`
   );
 
   console.log(
@@ -1082,13 +585,7 @@ async function main() {
     "Archivo generado: lista_limpia.m3u"
   );
 
-  console.log(
-    "Reporte generado: reporte.json"
-  );
-
-  console.log(
-    "=========================================="
-  );
+  console.log("==========================================");
 }
 
 // ============================================================
@@ -1096,21 +593,11 @@ async function main() {
 // ============================================================
 
 main().catch((error) => {
-  console.error(
-    "\n=========================================="
-  );
-
-  console.error(
-    "ERROR FATAL"
-  );
-
-  console.error(
-    "=========================================="
-  );
-
-  console.error(
-    error.message
-  );
+  console.error("");
+  console.error("==========================================");
+  console.error("ERROR FATAL");
+  console.error("==========================================");
+  console.error(error.message);
 
   process.exit(1);
 });
