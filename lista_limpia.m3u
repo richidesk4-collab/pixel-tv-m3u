@@ -10339,8 +10339,6 @@ http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/554836.mp4
 http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/554837.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Spider-Man: Un nuevo día (2026)" tvg-logo="http://redworld.pro:8880/images/fca1d2ef1ec0e2c83c0124a3a0dd8443.jpg" group-title="⭐️ Estrenos 2026 ⭐️",Spider-Man: Un nuevo día (2026)
 http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/554838.mp4
-#EXTINF:-1 tvg-id="" tvg-name="Star Wars: The Mandalorian and Grogu (2026)" tvg-logo="http://redworld.pro:8880/images/7dc37b80b71ea70ff41130184cb70bb6.jpg" group-title="⭐️ Estrenos 2026 ⭐️",Star Wars: The Mandalorian and Grogu (2026)
-http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/554839.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Strung (2026)" tvg-logo="http://redworld.pro:8880/images/b2aec3b0a8336dfd486a316d0a3143d4.jpg" group-title="⭐️ Estrenos 2026 ⭐️",Strung (2026)
 http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/554840.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Supergirl (2026)" tvg-logo="http://redworld.pro:8880/images/e2aafc58a60e05e94d839a84970102f0.jpg" group-title="⭐️ Estrenos 2026 ⭐️",Supergirl (2026)
@@ -16319,6 +16317,8 @@ http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/558548.mkv
 http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/558551.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Star Wars: Los últimos Jedi (2017)" tvg-logo="http://redworld.pro:8880/images/692fbb33f986c321d13dee09012bec74.jpg" group-title="⭐️Saga Star Wars",Star Wars: Los últimos Jedi (2017)
 http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/558552.mkv
+#EXTINF:-1 tvg-id="" tvg-name="Star Wars: The Mandalorian and Grogu (2026)" tvg-logo="http://redworld.pro:8880/images/7dc37b80b71ea70ff41130184cb70bb6.jpg" group-title="⭐️Saga Star Wars",Star Wars: The Mandalorian and Grogu (2026)
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/558553.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Creed. Corazón de campeón (2015)" tvg-logo="http://redworld.pro:8880/images/372bb8ca6de690320f3317d3dd341b70.jpg" group-title="⭐️Saga Creed",Creed. Corazón de campeón (2015)
 http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/558557.mkv
 #EXTINF:-1 tvg-id="" tvg-name="Creed 2: Defendiendo el Legado (2018)" tvg-logo="http://redworld.pro:8880/images/2de773adee1d645a4f40459c28b69ad0.jpg" group-title="⭐️Saga Creed",Creed 2: Defendiendo el Legado (2018)
@@ -18375,6 +18375,16 @@ http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/560911.mkv
 http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/560912.mkv
 #EXTINF:-1 tvg-id="" tvg-name="SEÑAL EXCLUSIVA " tvg-logo="" group-title="RED WORLD | ESPECIAL FIESTAS PATRIAS 2026",SEÑAL EXCLUSIVA
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/560913
+#EXTINF:-1 tvg-id="" tvg-name="Bull: La hora de la venganza (2021)" tvg-logo="http://redworld.pro:8880/images/22f82a03ae52aaca836a202ff24f26f4.jpg" group-title="⭐️Películas 2021",Bull: La hora de la venganza (2021)
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/560927.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Star Wars: The Mandalorian and Grogu  (2026)" tvg-logo="http://redworld.pro:8880/images/7dc37b80b71ea70ff41130184cb70bb6.jpg" group-title="⭐️ Estrenos 2026 ⭐️",Star Wars: The Mandalorian and Grogu  (2026)
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/560928.mp4
+#EXTINF:-1 tvg-id="" tvg-name="LEGO Star Wars: The Mandalorian (2026)" tvg-logo="http://redworld.pro:8880/images/b78fef6a797f698c573dcb883f728e2b.jpg" group-title="⭐️ Estrenos 2026 ⭐️",LEGO Star Wars: The Mandalorian (2026)
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/560929.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Te extraño, te amo (2026)" tvg-logo="http://redworld.pro:8880/images/7d07252fbc740db33f60a16e283d07ef.jpg" group-title="⭐️ Estrenos 2026 ⭐️",Te extraño, te amo (2026)
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/560930.mp4
+#EXTINF:-1 tvg-id="" tvg-name="A la carrera (2026)" tvg-logo="http://redworld.pro:8880/images/b17eb613365675ee68109227a0eaf735.jpg" group-title="⭐️ Estrenos 2026 ⭐️",A la carrera (2026)
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/560931.mp4
 #EXTINF:-1 tvg-id="" tvg-name="22.11.63 S01 E01" tvg-logo="http://redworld.pro:8880/images/960598a2e83bb83d328d00938458b32b.jpg" group-title="⭐️ Series Ciencia Ficción",22.11.63 S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/461563.mp4
 #EXTINF:-1 tvg-id="" tvg-name="22.11.63 S01 E02" tvg-logo="http://redworld.pro:8880/images/cba0cb63ac5b7f2e3193572f1166cb5e.jpg" group-title="⭐️ Series Ciencia Ficción",22.11.63 S01 E02
@@ -79077,6 +79087,8 @@ http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/555170.mp4
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/558587.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Clevatess S02 E08" tvg-logo="http://redworld.pro:8880/images/e45ad73d565c8eef32bf1675fb84ff66.jpg" group-title="⭐️ Series Anime ",Clevatess S02 E08
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/559994.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Clevatess S02 E09" tvg-logo="http://redworld.pro:8880/images/18a09f6f7d9c1a7b1210522bb4f14734.jpg" group-title="⭐️ Series Anime ",Clevatess S02 E09
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/560925.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Code Geass: La Rebelión de Lelouch S01 E01" tvg-logo="http://redworld.pro:8880/images/ed725b59b514a1e1b5a3322fde6e1fbb.jpg" group-title="⭐️ Series Anime ",Code Geass: La Rebelión de Lelouch S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/505947.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Code Geass: La Rebelión de Lelouch S01 E02" tvg-logo="http://redworld.pro:8880/images/09734d0b9aa5ef78f2c2b7b465d5c8cd.jpg" group-title="⭐️ Series Anime ",Code Geass: La Rebelión de Lelouch S01 E02
@@ -106905,6 +106917,8 @@ http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/555169.mp4
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/558586.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Re:ZERO -Starting Life in Another World- S01 E68" tvg-logo="http://redworld.pro:8880/images/4996108eaadde41e01ad4832b252719d.jpg" group-title="⭐️ Series Anime ",Re:ZERO -Starting Life in Another World- S01 E68
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/559993.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Re:ZERO -Starting Life in Another World- S01 E69" tvg-logo="http://redworld.pro:8880/images/0fe64bc545d65c00d253c1bb71a66504.jpg" group-title="⭐️ Series Anime ",Re:ZERO -Starting Life in Another World- S01 E69
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/560923.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Maleantes S01 E01" tvg-logo="http://redworld.pro:8880/images/562930eab501df451d0e591d2bb1161d.jpg" group-title="⭐️ Series Netflix ",Maleantes S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/523529.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Maleantes S01 E02" tvg-logo="http://redworld.pro:8880/images/f18a84fe2dd1a4960672c6adc2ab2679.jpg" group-title="⭐️ Series Netflix ",Maleantes S01 E02
@@ -117813,6 +117827,8 @@ http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/555176.mp4
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/558588.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Reacher S04 E05" tvg-logo="http://redworld.pro:8880/images/ebcdff73c3fddbe9f5fc74744bb85ba6.jpg" group-title="⭐️ Series Amazon ",Reacher S04 E05
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/560006.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Reacher S04 E06" tvg-logo="http://redworld.pro:8880/images/39c22c1979861393353b472aa13f0ba1.jpg" group-title="⭐️ Series Amazon ",Reacher S04 E06
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/560926.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Stargate SG-1 S01 E01" tvg-logo="http://redworld.pro:8880/images/ca4197da69f480789155925b35a737e1.jpg" group-title="⭐️ Series Amazon ",Stargate SG-1 S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/532729.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Stargate SG-1 S01 E02" tvg-logo="http://redworld.pro:8880/images/b0165e5586085c5c0a7c3323534e3f24.jpg" group-title="⭐️ Series Amazon ",Stargate SG-1 S01 E02
@@ -118385,6 +118401,8 @@ http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/559211.mp4
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/559212.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Ted Lasso S04 E04" tvg-logo="http://redworld.pro:8880/images/23e96a312cde48877f469f89664bcf4c.jpg" group-title="⭐️ Series Apple TV",Ted Lasso S04 E04
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/559989.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Ted Lasso S04 E05" tvg-logo="http://redworld.pro:8880/images/a8df6fa6a0872f6b424c3ea941946d32.jpg" group-title="⭐️ Series Apple TV",Ted Lasso S04 E05
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/560914.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Banshee S01 E01" tvg-logo="http://redworld.pro:8880/images/e4aa5a8178eb6c1402f776b14c8e781f.jpg" group-title="⭐️ Series Amazon ",Banshee S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/533120.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Banshee S01 E02" tvg-logo="http://redworld.pro:8880/images/7e5ff84d560f9eb7f5b13ae05236c19d.jpg" group-title="⭐️ Series Amazon ",Banshee S01 E02
@@ -119493,6 +119511,8 @@ http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/555165.mp4
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/558564.mp4
 #EXTINF:-1 tvg-id="" tvg-name="De viejo pueblerino a gran maestro espadachín S02 E08" tvg-logo="http://redworld.pro:8880/images/d545e2da02477aa8294adf2995353f39.jpg" group-title="⭐️ Series Amazon ",De viejo pueblerino a gran maestro espadachín S02 E08
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/559991.mp4
+#EXTINF:-1 tvg-id="" tvg-name="De viejo pueblerino a gran maestro espadachín S02 E09" tvg-logo="http://redworld.pro:8880/images/9dfde64e8c6c27e58b4d23f93011f6ff.jpg" group-title="⭐️ Series Amazon ",De viejo pueblerino a gran maestro espadachín S02 E09
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/560922.mp4
 #EXTINF:-1 tvg-id="" tvg-name="No tengo miedo S01 E01" tvg-logo="http://redworld.pro:8880/images/7fb7c4164f98b7476786913d127420a6.jpg" group-title="⭐️ Series Netflix ",No tengo miedo S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/535194.mp4
 #EXTINF:-1 tvg-id="" tvg-name="No tengo miedo S01 E02" tvg-logo="http://redworld.pro:8880/images/903b9ab8e9c3b679fa2df7cc99af2fe9.jpg" group-title="⭐️ Series Netflix ",No tengo miedo S01 E02
@@ -119569,6 +119589,8 @@ http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/555168.mp4
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/558585.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Trapped in a Dating Sim: The World of Otome Games is Tough for Mobs S02 E08" tvg-logo="http://redworld.pro:8880/images/c43b4802121f53ea4a77f464146dcc09.jpg" group-title="⭐️ Series Anime ",Trapped in a Dating Sim: The World of Otome Games is Tough for Mobs S02 E08
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/559992.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Trapped in a Dating Sim: The World of Otome Games is Tough for Mobs S02 E09" tvg-logo="http://redworld.pro:8880/images/e0faa0acc0fd2c285ed808684de634e3.jpg" group-title="⭐️ Series Anime ",Trapped in a Dating Sim: The World of Otome Games is Tough for Mobs S02 E09
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/560924.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Smoking Behind the Supermarket with You S01 E01" tvg-logo="http://redworld.pro:8880/images/38f4adb1e14c3124cc343fd1b89dd92c.jpg" group-title="⭐️ Series Anime ",Smoking Behind the Supermarket with You S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/535225.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Smoking Behind the Supermarket with You S01 E02" tvg-logo="http://redworld.pro:8880/images/a9de81eadb2f6ddeac2c0be7c84936bb.jpg" group-title="⭐️ Series Anime ",Smoking Behind the Supermarket with You S01 E02
@@ -122607,3 +122629,17 @@ http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/560177.mp4
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/560188.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Cuatro manos, dos sonatas S01 E02" tvg-logo="http://redworld.pro:8880/images/e77afce78ca4c75cf265de752fe8d1b4.jpg" group-title="⭐️ Series Netflix ",Cuatro manos, dos sonatas S01 E02
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/560223.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Mal de amores S01 E01" tvg-logo="http://redworld.pro:8880/images/155ca333dd712d9ad893c971f84269c8.jpg" group-title="⭐️ Series Netflix ",Mal de amores S01 E01
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/560915.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Mal de amores S01 E02" tvg-logo="http://redworld.pro:8880/images/c68d47c59ddcade3619083c88eb3c12c.jpg" group-title="⭐️ Series Netflix ",Mal de amores S01 E02
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/560916.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Mal de amores S01 E03" tvg-logo="http://redworld.pro:8880/images/3c5af8dde48d35cbf9383bddb61ebbdd.jpg" group-title="⭐️ Series Netflix ",Mal de amores S01 E03
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/560917.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Mal de amores S01 E04" tvg-logo="http://redworld.pro:8880/images/fe474a1d6b83bf85cc32e118b0add0e4.jpg" group-title="⭐️ Series Netflix ",Mal de amores S01 E04
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/560918.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Mal de amores S01 E05" tvg-logo="http://redworld.pro:8880/images/086444eaf51a2ffb94b0221125dbf00c.jpg" group-title="⭐️ Series Netflix ",Mal de amores S01 E05
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/560919.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Mal de amores S01 E06" tvg-logo="http://redworld.pro:8880/images/8191dc9db30138e591d0ad6e1a5a685d.jpg" group-title="⭐️ Series Netflix ",Mal de amores S01 E06
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/560920.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Mal de amores S01 E07" tvg-logo="http://redworld.pro:8880/images/46a97d7f400bd6d7755e4be44db773f7.jpg" group-title="⭐️ Series Netflix ",Mal de amores S01 E07
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/560921.mp4
