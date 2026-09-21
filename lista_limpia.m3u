@@ -4662,7 +4662,7 @@ http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/549133.mkv
 #EXTINF:-1 tvg-id="" tvg-name="Fallen \ (2016)" tvg-logo="http://redworld.pro:8880/images/db7321591ff0b1b4d5c365101fbd864a.jpg" group-title="⭐️Aventura",Fallen \ (2016)
 http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/549134.mkv
 #EXTINF:-1 tvg-id="" tvg-name="Far from Home: The Adventures of Yellow Dog (1995)" tvg-logo="http://redworld.pro:8880/images/0efc1fc0fe40cbbe25dab28db3dff722.jpg" group-title="⭐️Aventura",Far from Home: The Adventures of Yellow Dog (1995)
-http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/549135.mkv
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/549135.mp4
 #EXTINF:-1 tvg-id="" tvg-name="First Man \ (2018)" tvg-logo="http://redworld.pro:8880/images/0efc1fc0fe40cbbe25dab28db3dff722.jpg" group-title="⭐️Aventura",First Man \ (2018)
 http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/549136.mkv
 #EXTINF:-1 tvg-id="" tvg-name="Flicka: Country Pride (2012)" tvg-logo="http://redworld.pro:8880/images/1e168de3189ceaf761a645ef02e8cdd8.jpg" group-title="⭐️Aventura",Flicka: Country Pride (2012)
@@ -5303,8 +5303,6 @@ http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/549491.mkv
 http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/549492.mkv
 #EXTINF:-1 tvg-id="" tvg-name="007: Vive y deja morir (1973)" tvg-logo="http://redworld.pro:8880/images/a205fcc24db30d4d3e805a5bc926a472.jpg" group-title="⭐️Aventura",007: Vive y deja morir (1973)
 http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/549493.mkv
-#EXTINF:-1 tvg-id="" tvg-name="Volviendo a Casa: Un Viaje Increíble (1993)" tvg-logo="http://redworld.pro:8880/images/47deaa252e37e2be4d680736679f9660.jpg" group-title="⭐️Aventura",Volviendo a Casa: Un Viaje Increíble (1993)
-http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/549494.mkv
 #EXTINF:-1 tvg-id="" tvg-name="Warcraft: El primer encuentro de dos mundos (2016)" tvg-logo="http://redworld.pro:8880/images/d409b7b26572a61deb1c5963e6643acf.jpg" group-title="⭐️Aventura",Warcraft: El primer encuentro de dos mundos (2016)
 http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/549495.mkv
 #EXTINF:-1 tvg-id="" tvg-name="Wendy (2020)" tvg-logo="http://redworld.pro:8880/images/1064288152f9899545a3a1cfb7fc354c.jpg" group-title="⭐️Aventura",Wendy (2020)
@@ -19209,10 +19207,16 @@ http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/562344.mp4
 http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/562345.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Resident Evil: Noche cero (2026) CAM" tvg-logo="http://redworld.pro:8880/images/0fee9cbf73b2a9334990cd9351eee273.jpg" group-title="⭐️ Estrenos 2026 ⭐️",Resident Evil: Noche cero (2026) CAM
 http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/562346.mp4
-#EXTINF:-1 tvg-id="" tvg-name="UFC 331 " tvg-logo="http://redworld.pro:8880/images/c8e7a6a4e47e499e60e09efbf6347eee.png" group-title="⭐️UFC 331 ",UFC 331
-http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/561812
-#EXTINF:-1 tvg-id="" tvg-name="UFC 331 Op2" tvg-logo="http://redworld.pro:8880/images/c8e7a6a4e47e499e60e09efbf6347eee.png" group-title="⭐️UFC 331 ",UFC 331 Op2
-http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/562439
+#EXTINF:-1 tvg-id="" tvg-name="Volviendo a Casa: Un Viaje Increíble (1993)" tvg-logo="http://redworld.pro:8880/images/47deaa252e37e2be4d680736679f9660.jpg" group-title="⭐️Aventura",Volviendo a Casa: Un Viaje Increíble (1993)
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/562459.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Volviendo a Casa 2: Perdidos en San Francisco (1996)" tvg-logo="http://redworld.pro:8880/images/b021c116c4ca370e794ca52c0f02aa1a.jpg" group-title="⭐️Aventura",Volviendo a Casa 2: Perdidos en San Francisco (1996)
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/562460.mp4
+#EXTINF:-1 tvg-id="" tvg-name="La señal del apocalipsis (2026)" tvg-logo="http://redworld.pro:8880/images/3512f6e3ea3b9c9e48676a37e3ea45ca.jpg" group-title="⭐️ Estrenos 2026 ⭐️",La señal del apocalipsis (2026)
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/562461.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Bajo el hechizo del deseo 3 (2026)" tvg-logo="http://redworld.pro:8880/images/34e740be202db4e64171153c4c4285a4.jpg" group-title="⭐️ Estrenos 2026 ⭐️",Bajo el hechizo del deseo 3 (2026)
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/562466.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Las Mejores (2026)" tvg-logo="http://redworld.pro:8880/images/d6690e75e76c74ad6a7045bd8b1344ef.jpg" group-title="⭐️ Estrenos 2026 ⭐️",Las Mejores (2026)
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/562467.mp4
 #EXTINF:-1 tvg-id="" tvg-name="22.11.63 S01 E01" tvg-logo="http://redworld.pro:8880/images/960598a2e83bb83d328d00938458b32b.jpg" group-title="⭐️ Series Ciencia Ficción",22.11.63 S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/461563.mp4
 #EXTINF:-1 tvg-id="" tvg-name="22.11.63 S01 E02" tvg-logo="http://redworld.pro:8880/images/cba0cb63ac5b7f2e3193572f1166cb5e.jpg" group-title="⭐️ Series Ciencia Ficción",22.11.63 S01 E02
@@ -23771,6 +23775,8 @@ http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/560228.mp4
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/561809.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Operativo: Lioness S03 E07" tvg-logo="http://redworld.pro:8880/images/817e5df5012379f7c310035cc5b1e665.jpg" group-title="⭐️ Series Paramount",Operativo: Lioness S03 E07
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/561810.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Operativo: Lioness S03 E08" tvg-logo="http://redworld.pro:8880/images/a6bc9e2ec85a6ca6f2148dbf5a273c39.jpg" group-title="⭐️ Series Paramount",Operativo: Lioness S03 E08
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/562463.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Twisted Metal S01 E01" tvg-logo="http://redworld.pro:8880/images/83d96e9d4c6b422536a9e80fc8ec0585.jpg" group-title="⭐️ Series Acción",Twisted Metal S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/461872.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Twisted Metal S01 E02" tvg-logo="http://redworld.pro:8880/images/83d96e9d4c6b422536a9e80fc8ec0585.jpg" group-title="⭐️ Series Acción",Twisted Metal S01 E02
@@ -84225,6 +84231,8 @@ http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/560222.mp4
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/561463.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Mushoku Tensei Jobless Reincarnation S03 E12" tvg-logo="http://redworld.pro:8880/images/d87e731b5682a9168f4fc54efde04c4f.jpg" group-title="⭐️ Series Anime ",Mushoku Tensei Jobless Reincarnation S03 E12
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/561620.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Mushoku Tensei Jobless Reincarnation S03 E13" tvg-logo="http://redworld.pro:8880/images/ea0e6fb16401695b22e6b33a34f25413.jpg" group-title="⭐️ Series Anime ",Mushoku Tensei Jobless Reincarnation S03 E13
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/562462.mp4
 #EXTINF:-1 tvg-id="" tvg-name="My Dress-Up Darling S01 E01" tvg-logo="http://redworld.pro:8880/images/097c5bf5896884a20c7314f0ce221bb2.jpg" group-title="⭐️ Series Anime ",My Dress-Up Darling S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/508496.mkv
 #EXTINF:-1 tvg-id="" tvg-name="My Dress-Up Darling S01 E02" tvg-logo="http://redworld.pro:8880/images/581d5f9540b9291fd524b45395639d41.jpg" group-title="⭐️ Series Anime ",My Dress-Up Darling S01 E02
@@ -123103,6 +123111,8 @@ http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/560224.mp4
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/561468.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Linternas S01 E05" tvg-logo="http://redworld.pro:8880/images/3e38ecc623413dd4002cbeb9f92c1cad.jpg" group-title="⭐️ Series Netflix ",Linternas S01 E05
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/561653.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Linternas S01 E06" tvg-logo="http://redworld.pro:8880/images/304da9253a68dea0ed5c1555d80e379b.jpg" group-title="⭐️ Series Netflix ",Linternas S01 E06
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/562468.mp4
 #EXTINF:-1 tvg-id="" tvg-name="¿Qué hacemos escalando montañas? S01 E01" tvg-logo="http://redworld.pro:8880/images/548c5d181879d1fa08aee92e95201614.jpg" group-title="⭐️ Series Netflix ",¿Qué hacemos escalando montañas? S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/558513.mp4
 #EXTINF:-1 tvg-id="" tvg-name="¿Qué hacemos escalando montañas? S01 E02" tvg-logo="http://redworld.pro:8880/images/548c5d181879d1fa08aee92e95201614.jpg" group-title="⭐️ Series Netflix ",¿Qué hacemos escalando montañas? S01 E02
@@ -123677,6 +123687,8 @@ http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/561607.mp4
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/561622.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Cuatro manos, dos sonatas S01 E07" tvg-logo="http://redworld.pro:8880/images/d191b5d99612c03d42452448f18d963d.jpg" group-title="⭐️ Series Netflix ",Cuatro manos, dos sonatas S01 E07
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/562438.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Cuatro manos, dos sonatas S01 E08" tvg-logo="http://redworld.pro:8880/images/72d9a04bfce0464cedbb2cbde77c1509.jpg" group-title="⭐️ Series Netflix ",Cuatro manos, dos sonatas S01 E08
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/562465.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Mal de amores S01 E01" tvg-logo="http://redworld.pro:8880/images/155ca333dd712d9ad893c971f84269c8.jpg" group-title="⭐️ Series Netflix ",Mal de amores S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/560915.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Mal de amores S01 E02" tvg-logo="http://redworld.pro:8880/images/c68d47c59ddcade3619083c88eb3c12c.jpg" group-title="⭐️ Series Netflix ",Mal de amores S01 E02
@@ -124037,6 +124049,8 @@ http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/561606.mp4
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/561621.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Un amor distinto al tuyo S01 E03" tvg-logo="http://redworld.pro:8880/images/9279bc8a212f3ccb13ff532401701e71.jpg" group-title="⭐️ Series Amazon ",Un amor distinto al tuyo S01 E03
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/562437.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Un amor distinto al tuyo S01 E04" tvg-logo="http://redworld.pro:8880/images/6e56c5baed8100c005056113b6a83c1d.jpg" group-title="⭐️ Series Amazon ",Un amor distinto al tuyo S01 E04
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/562464.mp4
 #EXTINF:-1 tvg-id="" tvg-name="The Good Doctor S01 E01" tvg-logo="http://redworld.pro:8880/images/8e4471840c9194853362cc5310da1b2d.jpg" group-title="⭐️ Series Amazon ",The Good Doctor S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/561654.mp4
 #EXTINF:-1 tvg-id="" tvg-name="The Good Doctor S01 E02" tvg-logo="http://redworld.pro:8880/images/756de85df9d4d9d6f1eb15a8b6b8d6cf.jpg" group-title="⭐️ Series Amazon ",The Good Doctor S01 E02
