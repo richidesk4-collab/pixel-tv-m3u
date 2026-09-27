@@ -1809,7 +1809,7 @@ http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/527230
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/524607
 #EXTINF:-1 tvg-id="" tvg-name="SEÑAL (3) " tvg-logo="http://redworld.pro:8880/images/9a65300d2130239036d2370b7142aae0.png" group-title="",SEÑAL (3)
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/524606
-#EXTINF:-1 tvg-id="lch2775" tvg-name="PE*| E$PN 1 HD" tvg-logo="http://redworld.pro:8880/images/669465c0bb8b14bd996ebeb2e1b3d0da.png" group-title="⭐️ DƏPORTES PE",PE*| E$PN 1 HD
+#EXTINF:-1 tvg-id="ESPN.pe" tvg-name="PE*| E$PN 1 HD" tvg-logo="http://redworld.pro:8880/images/669465c0bb8b14bd996ebeb2e1b3d0da.png" group-title="⭐️ DƏPORTES PE",PE*| E$PN 1 HD
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/533395
 #EXTINF:-1 tvg-id="lch3952" tvg-name="PE | 3$PN 2 HD" tvg-logo="http://redworld.pro:8880/images/06f8b949029a4cf1f5b2021eed2e8159.png" group-title="⭐️ DƏPORTES PE",PE | 3$PN 2 HD
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/533397
@@ -19195,8 +19195,6 @@ http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/562343.mp4
 http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/562344.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Savage House (2026)" tvg-logo="http://redworld.pro:8880/images/06893ffbef25076db26b43bf90f46694.jpg" group-title="⭐️ Estrenos 2026 ⭐️",Savage House (2026)
 http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/562345.mp4
-#EXTINF:-1 tvg-id="" tvg-name="Resident Evil: Noche cero (2026) CAM" tvg-logo="http://redworld.pro:8880/images/0fee9cbf73b2a9334990cd9351eee273.jpg" group-title="⭐️ Estrenos 2026 ⭐️",Resident Evil: Noche cero (2026) CAM
-http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/562346.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Volviendo a Casa: Un Viaje Increíble (1993)" tvg-logo="http://redworld.pro:8880/images/47deaa252e37e2be4d680736679f9660.jpg" group-title="⭐️Aventura",Volviendo a Casa: Un Viaje Increíble (1993)
 http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/562459.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Volviendo a Casa 2: Perdidos en San Francisco (1996)" tvg-logo="http://redworld.pro:8880/images/b021c116c4ca370e794ca52c0f02aa1a.jpg" group-title="⭐️Aventura",Volviendo a Casa 2: Perdidos en San Francisco (1996)
@@ -19233,6 +19231,14 @@ http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/562992.mp4
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/561812
 #EXTINF:-1 tvg-id="" tvg-name="UFC Fight Night: Rosas Jr. vs. Barcelos Op2" tvg-logo="http://redworld.pro:8880/images/c8e7a6a4e47e499e60e09efbf6347eee.png" group-title="⭐️UFC Fight Night: Rosas Jr. vs. Barcelos",UFC Fight Night: Rosas Jr. vs. Barcelos Op2
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/562439
+#EXTINF:-1 tvg-id="" tvg-name="Lo Malo del Amor (2026)" tvg-logo="http://redworld.pro:8880/images/d0b857796806f0b455780156d1ccf34f.jpg" group-title="⭐️ Estrenos 2026 ⭐️",Lo Malo del Amor (2026)
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/563001.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Spidey y Los Vengadores: Halloween en equipo (2026)" tvg-logo="http://redworld.pro:8880/images/162b78aef5f2d368e4327dc90740eea2.jpg" group-title="⭐️ Estrenos 2026 ⭐️",Spidey y Los Vengadores: Halloween en equipo (2026)
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/563002.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Resident Evil: Noche cero (2026) CAM" tvg-logo="http://redworld.pro:8880/images/0fee9cbf73b2a9334990cd9351eee273.jpg" group-title="⭐️ Estrenos 2026 ⭐️",Resident Evil: Noche cero (2026) CAM
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/563004.mp4
+#EXTINF:-1 tvg-id="" tvg-name="El corazón de la bestia (2026) CAM" tvg-logo="http://redworld.pro:8880/images/1cd31c2070e70a3cda1e630066c1270e.jpg" group-title="⭐️ Estrenos 2026 ⭐️",El corazón de la bestia (2026) CAM
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/563005.mp4
 #EXTINF:-1 tvg-id="" tvg-name="22.11.63 S01 E01" tvg-logo="http://redworld.pro:8880/images/960598a2e83bb83d328d00938458b32b.jpg" group-title="⭐️ Series Ciencia Ficción",22.11.63 S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/461563.mp4
 #EXTINF:-1 tvg-id="" tvg-name="22.11.63 S01 E02" tvg-logo="http://redworld.pro:8880/images/cba0cb63ac5b7f2e3193572f1166cb5e.jpg" group-title="⭐️ Series Ciencia Ficción",22.11.63 S01 E02
