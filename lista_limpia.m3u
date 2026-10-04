@@ -19253,10 +19253,6 @@ http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/563794.mp4
 http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/563795.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Ninja Wars: BlackFox vs Shogun's Ninja (2026)" tvg-logo="http://redworld.pro:8880/images/c88689b87d93f929ea131dd701a837ba.jpg" group-title="⭐️ Estrenos 2026 ⭐️",Ninja Wars: BlackFox vs Shogun's Ninja (2026)
 http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/563796.mp4
-#EXTINF:-1 tvg-id="" tvg-name="21:15 CL | Cleveland Browns vs Pittsburgh Steelers" tvg-logo="" group-title="⭐️ NFL Exclusivo ⭐️ ",21:15 CL | Cleveland Browns vs Pittsburgh Steelers
-http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/563797
-#EXTINF:-1 tvg-id="" tvg-name="21:15 CL | Cleveland Browns vs Pittsburgh Steelers OP2" tvg-logo="" group-title="⭐️ NFL Exclusivo ⭐️ ",21:15 CL | Cleveland Browns vs Pittsburgh Steelers OP2
-http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/563799
 #EXTINF:-1 tvg-id="" tvg-name="Las cartas de la vida (2026)" tvg-logo="http://redworld.pro:8880/images/0592768024101e4372464920bd4598eb.jpg" group-title="⭐️ Estrenos 2026 ⭐️",Las cartas de la vida (2026)
 http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/563935.mp4
 #EXTINF:-1 tvg-id="" tvg-name="No dejes a los niños solos (2026)" tvg-logo="http://redworld.pro:8880/images/5d19d53c48f45bb271ca0084c8af1605.jpg" group-title="⭐️ Estrenos 2026 ⭐️",No dejes a los niños solos (2026)
@@ -19267,6 +19263,16 @@ http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/561812
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/562439
 #EXTINF:-1 tvg-id="" tvg-name="Verity: La sombra de un engaño (2026) CAM" tvg-logo="http://redworld.pro:8880/images/f0bbb93ad7c03cb3af4587a4691fa843.jpg" group-title="⭐️ Estrenos 2026 ⭐️",Verity: La sombra de un engaño (2026) CAM
 http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/563999.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Unicorn Wars (2022)" tvg-logo="http://redworld.pro:8880/images/5fb0f434e9de64fee35266cdaff0546d.jpg" group-title="⭐️Acción",Unicorn Wars (2022)
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/564002.mp4
+#EXTINF:-1 tvg-id="" tvg-name="El mafioso, el policía, el demonio" tvg-logo="http://redworld.pro:8880/images/4477271913511aeaed9beea2ca6bca9c.jpg" group-title="⭐️Acción",El mafioso, el policía, el demonio
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/564003.mp4
+#EXTINF:-1 tvg-id="" tvg-name="big world" tvg-logo="http://redworld.pro:8880/images/4b8cd2a1f8be805ef57ec7faa2288395.jpg" group-title="⭐️Drama",big world
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/564007.mp4
+#EXTINF:-1 tvg-id="" tvg-name="10/04 NFL 9:30am Washington Commanders = NFL NETWORK" tvg-logo="http://redworld.pro:8880/images/8b98b351a8a5945ee781c949161a11a3.png" group-title="⭐️ NFL Exclusivo ⭐️ ",10/04 NFL 9:30am Washington Commanders = NFL NETWORK
+http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/564011
+#EXTINF:-1 tvg-id="" tvg-name="10/04 NFL 9:30am Washington Commanders = ESPN DEPORTES" tvg-logo="http://redworld.pro:8880/images/8b98b351a8a5945ee781c949161a11a3.png" group-title="⭐️ NFL Exclusivo ⭐️ ",10/04 NFL 9:30am Washington Commanders = ESPN DEPORTES
+http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/564012
 #EXTINF:-1 tvg-id="" tvg-name="22.11.63 S01 E01" tvg-logo="http://redworld.pro:8880/images/960598a2e83bb83d328d00938458b32b.jpg" group-title="⭐️ Series Ciencia Ficción",22.11.63 S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/461563.mp4
 #EXTINF:-1 tvg-id="" tvg-name="22.11.63 S01 E02" tvg-logo="http://redworld.pro:8880/images/cba0cb63ac5b7f2e3193572f1166cb5e.jpg" group-title="⭐️ Series Ciencia Ficción",22.11.63 S01 E02
@@ -123839,6 +123845,8 @@ http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/563000.mp4
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/563007.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Cuatro manos, dos sonatas S01 E11" tvg-logo="http://redworld.pro:8880/images/a86859813925653c5306825766175d65.jpg" group-title="⭐️ Series Netflix ",Cuatro manos, dos sonatas S01 E11
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/563998.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Cuatro manos, dos sonatas S01 E12" tvg-logo="http://redworld.pro:8880/images/3ab0cb02e4b04f325ba424a03c7bc773.jpg" group-title="⭐️ Series Netflix ",Cuatro manos, dos sonatas S01 E12
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564008.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Mal de amores S01 E01" tvg-logo="http://redworld.pro:8880/images/155ca333dd712d9ad893c971f84269c8.jpg" group-title="⭐️ Series Netflix ",Mal de amores S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/560915.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Mal de amores S01 E02" tvg-logo="http://redworld.pro:8880/images/c68d47c59ddcade3619083c88eb3c12c.jpg" group-title="⭐️ Series Netflix ",Mal de amores S01 E02
@@ -124221,6 +124229,8 @@ http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/562437.mp4
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/562464.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Un amor distinto al tuyo S01 E05" tvg-logo="http://redworld.pro:8880/images/9af756056896de6004b64150096ab92c.jpg" group-title="⭐️ Series Amazon ",Un amor distinto al tuyo S01 E05
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/563996.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Un amor distinto al tuyo S01 E06" tvg-logo="http://redworld.pro:8880/images/825942087b5ab6e3c1caa1a0052c0c7a.jpg" group-title="⭐️ Series Amazon ",Un amor distinto al tuyo S01 E06
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564004.mp4
 #EXTINF:-1 tvg-id="" tvg-name="The Good Doctor S01 E01" tvg-logo="http://redworld.pro:8880/images/8e4471840c9194853362cc5310da1b2d.jpg" group-title="⭐️ Series Amazon ",The Good Doctor S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/561654.mp4
 #EXTINF:-1 tvg-id="" tvg-name="The Good Doctor S01 E02" tvg-logo="http://redworld.pro:8880/images/756de85df9d4d9d6f1eb15a8b6b8d6cf.jpg" group-title="⭐️ Series Amazon ",The Good Doctor S01 E02
@@ -126669,6 +126679,10 @@ http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/563767.mp4
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/563779.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Irremplazable S01 E09" tvg-logo="http://redworld.pro:8880/images/eabdb930b4422494bc2f863a329ddce2.jpg" group-title="⭐️ Series Netflix ",Irremplazable S01 E09
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/563934.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Irremplazable S01 E10" tvg-logo="http://redworld.pro:8880/images/d61c8affe7c5206addae0efd0944bcd5.jpg" group-title="⭐️ Series Netflix ",Irremplazable S01 E10
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564005.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Irremplazable S01 E11" tvg-logo="http://redworld.pro:8880/images/ef34374886f0afe748afa35c62afc170.jpg" group-title="⭐️ Series Netflix ",Irremplazable S01 E11
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564006.mp4
 #EXTINF:-1 tvg-id="" tvg-name="JoJo's Bizarre Adventure S01 E01" tvg-logo="http://redworld.pro:8880/images/84eaaa65b49f12b1a0816274b51ba29f.jpg" group-title="⭐️ Series Netflix ",JoJo's Bizarre Adventure S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/563154.mp4
 #EXTINF:-1 tvg-id="" tvg-name="JoJo's Bizarre Adventure S01 E02" tvg-logo="http://redworld.pro:8880/images/d8b02dca2bf31f25a680c9edb74bd3c9.jpg" group-title="⭐️ Series Netflix ",JoJo's Bizarre Adventure S01 E02
