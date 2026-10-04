@@ -185,7 +185,7 @@ http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/328109
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/328110
 #EXTINF:-1 tvg-id="" tvg-name="AR | F0X $PORTS PREMIUM" tvg-logo="http://redworld.pro:8880/images/65d1b536a5c2eb33ca65344adeabdfba.png" group-title="⭐️ Deporte Argentina",AR | F0X $PORTS PREMIUM
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/328111
-#EXTINF:-1 tvg-id="" tvg-name="Love Planet HD" tvg-logo="http://redworld.pro:8880/images/ad4943043f51563d2cf7eddc96b98be1.png" group-title="⭐️ CULTURA",Love Planet HD
+#EXTINF:-1 tvg-id="" tvg-name="Love Nature HD" tvg-logo="http://redworld.pro:8880/images/ad4943043f51563d2cf7eddc96b98be1.png" group-title="⭐️ CULTURA",Love Nature HD
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/348755
 #EXTINF:-1 tvg-id="" tvg-name="Love Nature SD (D)" tvg-logo="http://goldfull.pro:8880/images/ad4943043f51563d2cf7eddc96b98be1.png" group-title="⭐️ Canales "Conexiones Lentas"",Love Nature SD (D)
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/348756
@@ -19265,6 +19265,8 @@ http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/563936.mp4
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/561812
 #EXTINF:-1 tvg-id="" tvg-name="UFC 332 Op2" tvg-logo="http://redworld.pro:8880/images/c8e7a6a4e47e499e60e09efbf6347eee.png" group-title="⭐️UFC 332",UFC 332 Op2
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/562439
+#EXTINF:-1 tvg-id="" tvg-name="Verity: La sombra de un engaño (2026) CAM" tvg-logo="http://redworld.pro:8880/images/f0bbb93ad7c03cb3af4587a4691fa843.jpg" group-title="⭐️ Estrenos 2026 ⭐️",Verity: La sombra de un engaño (2026) CAM
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/563999.mp4
 #EXTINF:-1 tvg-id="" tvg-name="22.11.63 S01 E01" tvg-logo="http://redworld.pro:8880/images/960598a2e83bb83d328d00938458b32b.jpg" group-title="⭐️ Series Ciencia Ficción",22.11.63 S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/461563.mp4
 #EXTINF:-1 tvg-id="" tvg-name="22.11.63 S01 E02" tvg-logo="http://redworld.pro:8880/images/cba0cb63ac5b7f2e3193572f1166cb5e.jpg" group-title="⭐️ Series Ciencia Ficción",22.11.63 S01 E02
@@ -23747,6 +23749,10 @@ http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/563134.mp4
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/563788.mp4
 #EXTINF:-1 tvg-id="" tvg-name="El Señor de los Cielos S10 E60" tvg-logo="http://redworld.pro:8880/images/19cf0b228739b66e897ab8171b4106b4.jpg" group-title="⭐️ Series Narcos",El Señor de los Cielos S10 E60
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/563789.mp4
+#EXTINF:-1 tvg-id="" tvg-name="El Señor de los Cielos S10 E61" tvg-logo="http://redworld.pro:8880/images/751f74d3202a2a1f1fe238cf6fbd52bb.jpg" group-title="⭐️ Series Narcos",El Señor de los Cielos S10 E61
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564000.mp4
+#EXTINF:-1 tvg-id="" tvg-name="El Señor de los Cielos S10 E62" tvg-logo="http://redworld.pro:8880/images/003298572b16c9b51620384108af0fc4.jpg" group-title="⭐️ Series Narcos",El Señor de los Cielos S10 E62
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564001.mp4
 #EXTINF:-1 tvg-id="" tvg-name="The Ark S01 E01" tvg-logo="http://redworld.pro:8880/images/277f33be5bc118287ccf3450189c069e.jpg" group-title="⭐️ Series Ciencia Ficción",The Ark S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/461498.mp4
 #EXTINF:-1 tvg-id="" tvg-name="The Ark S01 E02" tvg-logo="http://redworld.pro:8880/images/c2029924a7fb92ee6fc51992af797e5a.jpg" group-title="⭐️ Series Ciencia Ficción",The Ark S01 E02
