@@ -1789,7 +1789,7 @@ http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/527230
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/524607
 #EXTINF:-1 tvg-id="" tvg-name="SEÑAL (3) " tvg-logo="http://redworld.pro:8880/images/9a65300d2130239036d2370b7142aae0.png" group-title="",SEÑAL (3)
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/524606
-#EXTINF:-1 tvg-id="ESPN.pe" tvg-name="PE*| E$PN 1 HD" tvg-logo="http://redworld.pro:8880/images/669465c0bb8b14bd996ebeb2e1b3d0da.png" group-title="⭐️ DƏPORTES PE",PE*| E$PN 1 HD
+#EXTINF:-1 tvg-id="lch2775" tvg-name="PE*| E$PN 1 HD" tvg-logo="http://redworld.pro:8880/images/669465c0bb8b14bd996ebeb2e1b3d0da.png" group-title="⭐️ DƏPORTES PE",PE*| E$PN 1 HD
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/533395
 #EXTINF:-1 tvg-id="lch3952" tvg-name="PE | 3$PN 2 HD" tvg-logo="http://redworld.pro:8880/images/06f8b949029a4cf1f5b2021eed2e8159.png" group-title="⭐️ DƏPORTES PE",PE | 3$PN 2 HD
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/533397
@@ -1805,7 +1805,7 @@ http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/533401
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/533402
 #EXTINF:-1 tvg-id="lch7217" tvg-name="PE | *LIGA 1 MAX HD" tvg-logo="http://redworld.pro:8880/images/32e8419a7ecb8f918c70fdadf783e3d8.png" group-title="⭐️ DƏPORTES PE",PE | *LIGA 1 MAX HD
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/533403
-#EXTINF:-1 tvg-id="l1max.pe" tvg-name="PE | *LIGA 1 MAX SD" tvg-logo="http://redworld.pro:8880/images/32e8419a7ecb8f918c70fdadf783e3d8.png" group-title="⭐️ DƏPORTES PE",PE | *LIGA 1 MAX SD
+#EXTINF:-1 tvg-id="lch7217" tvg-name="PE | *LIGA 1 MAX SD" tvg-logo="http://redworld.pro:8880/images/32e8419a7ecb8f918c70fdadf783e3d8.png" group-title="⭐️ DƏPORTES PE",PE | *LIGA 1 MAX SD
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/533404
 #EXTINF:-1 tvg-id="lch7216" tvg-name="PE | *LIGA 1" tvg-logo="http://redworld.pro:8880/images/32e8419a7ecb8f918c70fdadf783e3d8.png" group-title="⭐️ DƏPORTES PE",PE | *LIGA 1
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/533405
@@ -19313,6 +19313,12 @@ http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/564251
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/564252
 #EXTINF:-1 tvg-id="" tvg-name="GALAVISION SAN FRANCISCO HD" tvg-logo="https://i.picasion.com/pic92/e871f174d00acd5f7facb7c04613118a.gif" group-title="⭐️ Unimas - Galavision",GALAVISION SAN FRANCISCO HD
 http://redworld.pro:8880/56961941026f/ZqupFFd9hujH/564253
+#EXTINF:-1 tvg-id="" tvg-name="Solo necesitas matar (2026)" tvg-logo="http://redworld.pro:8880/images/ab9b52d060964a0a55a02581ef70ffc7.jpg" group-title="⭐️ Estrenos 2026 ⭐️",Solo necesitas matar (2026)
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/564303.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Matchbox: La película (2026)" tvg-logo="http://redworld.pro:8880/images/cfcb92621434729a08d37e90c3c91891.jpg" group-title="⭐️ Estrenos 2026 ⭐️",Matchbox: La película (2026)
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/564304.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Animals (2026)" tvg-logo="http://redworld.pro:8880/images/8224a43a31a78171ac1ea96226c0bcb1.jpg" group-title="⭐️ Estrenos 2026 ⭐️",Animals (2026)
+http://redworld.pro:8880/movie/56961941026f/ZqupFFd9hujH/564305.mp4
 #EXTINF:-1 tvg-id="" tvg-name="22.11.63 S01 E01" tvg-logo="http://redworld.pro:8880/images/960598a2e83bb83d328d00938458b32b.jpg" group-title="⭐️ Series Ciencia Ficción",22.11.63 S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/461563.mp4
 #EXTINF:-1 tvg-id="" tvg-name="22.11.63 S01 E02" tvg-logo="http://redworld.pro:8880/images/cba0cb63ac5b7f2e3193572f1166cb5e.jpg" group-title="⭐️ Series Ciencia Ficción",22.11.63 S01 E02
@@ -92987,6 +92993,8 @@ http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/509907.mp4
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/509908.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Tokyo Revengers S04 E01" tvg-logo="http://redworld.pro:8880/images/bd083989f8723701144559d69ef686a3.jpg" group-title="⭐️ Series Anime ",Tokyo Revengers S04 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/563874.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Tokyo Revengers S04 E02" tvg-logo="http://redworld.pro:8880/images/f69b0333aa0ed453f78b324f55936895.jpg" group-title="⭐️ Series Anime ",Tokyo Revengers S04 E02
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564255.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Tokyo Babylon S01 E01" tvg-logo="http://redworld.pro:8880/images/72ef78d13636bc1e61c572435986c604.jpg" group-title="⭐️ Series Anime ",Tokyo Babylon S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/509796.mkv
 #EXTINF:-1 tvg-id="" tvg-name="Tokyo Babylon S01 E02" tvg-logo="http://redworld.pro:8880/images/72ef78d13636bc1e61c572435986c604.jpg" group-title="⭐️ Series Anime ",Tokyo Babylon S01 E02
@@ -125733,6 +125741,8 @@ http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/562430.mp4
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/562985.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Tierra de Mafia S02 E03" tvg-logo="http://redworld.pro:8880/images/2fd8da7c8a1dffd8cff555f8d6b50b10.jpg" group-title="⭐️ Series Paramount",Tierra de Mafia S02 E03
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/563933.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Tierra de Mafia S02 E04" tvg-logo="http://redworld.pro:8880/images/3fad1a70954ea1e00e398165276ea357.jpg" group-title="⭐️ Series Paramount",Tierra de Mafia S02 E04
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564301.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Youth S01 E01" tvg-logo="http://redworld.pro:8880/images/5ef75cb5d7fab15c046660804dc8a865.jpg" group-title="⭐️ Series HBO ",Youth S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/562489.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Youth S01 E02" tvg-logo="http://redworld.pro:8880/images/393dd09583d0c948993acafed991e434.jpg" group-title="⭐️ Series HBO ",Youth S01 E02
@@ -126763,6 +126773,8 @@ http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564073.mp4
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564129.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Irremplazable S01 E15" tvg-logo="http://redworld.pro:8880/images/e2ec12752a80352fa5b794307d61363f.jpg" group-title="⭐️ Series Netflix ",Irremplazable S01 E15
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564172.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Irremplazable S01 E16" tvg-logo="http://redworld.pro:8880/images/c117d3374f2f857a30aeeb1983befa39.jpg" group-title="⭐️ Series Netflix ",Irremplazable S01 E16
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564256.mp4
 #EXTINF:-1 tvg-id="" tvg-name="JoJo's Bizarre Adventure S01 E01" tvg-logo="http://redworld.pro:8880/images/84eaaa65b49f12b1a0816274b51ba29f.jpg" group-title="⭐️ Series Netflix ",JoJo's Bizarre Adventure S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/563154.mp4
 #EXTINF:-1 tvg-id="" tvg-name="JoJo's Bizarre Adventure S01 E02" tvg-logo="http://redworld.pro:8880/images/d8b02dca2bf31f25a680c9edb74bd3c9.jpg" group-title="⭐️ Series Netflix ",JoJo's Bizarre Adventure S01 E02
@@ -127959,6 +127971,8 @@ http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/563822.mp4
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/563823.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Tougen Anki S02 E01" tvg-logo="http://redworld.pro:8880/images/f71b24b32f3b625e8dbed6cbe0b1dae2.jpg" group-title="⭐️ Series Netflix ",Tougen Anki S02 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/563824.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Tougen Anki S02 E02" tvg-logo="http://redworld.pro:8880/images/c80e90c33bb0a0ecf7c82241a86347de.jpg" group-title="⭐️ Series Netflix ",Tougen Anki S02 E02
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564271.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Los diarios de la boticaria S01 E01" tvg-logo="http://redworld.pro:8880/images/c4f2e80f90ac0cd00633628fcf7a70d9.jpg" group-title="⭐️ Series Anime ",Los diarios de la boticaria S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/563825.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Los diarios de la boticaria S01 E02" tvg-logo="http://redworld.pro:8880/images/344c79063235d96aa9b20dd1db19e976.jpg" group-title="⭐️ Series Anime ",Los diarios de la boticaria S01 E02
@@ -128057,6 +128071,8 @@ http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/563871.mp4
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/563872.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Los diarios de la boticaria S03 E01" tvg-logo="http://redworld.pro:8880/images/eeec46523acf6e097619c6c1c3182f0b.jpg" group-title="⭐️ Series Anime ",Los diarios de la boticaria S03 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/563873.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Los diarios de la boticaria S03 E02" tvg-logo="http://redworld.pro:8880/images/eeec46523acf6e097619c6c1c3182f0b.jpg" group-title="⭐️ Series Anime ",Los diarios de la boticaria S03 E02
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564254.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Reina roja S01 E01" tvg-logo="http://redworld.pro:8880/images/c8593c92b5f623f9def75170c5bbe46c.jpg" group-title="⭐️ Series Amazon ",Reina roja S01 E01
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/563885.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Reina roja S01 E02" tvg-logo="http://redworld.pro:8880/images/204fa162092fb29e1b326b969a6ea65c.jpg" group-title="⭐️ Series Amazon ",Reina roja S01 E02
@@ -128261,3 +128277,75 @@ http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564176.mp4
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564177.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Bajo la superficie S01 E06" tvg-logo="http://redworld.pro:8880/images/2acc891fe74b6bf63032801662e8b650.jpg" group-title="⭐️ Series Netflix ",Bajo la superficie S01 E06
 http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564178.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Marshals: Una historia de Yellowstone S01 E01" tvg-logo="http://redworld.pro:8880/images/4f366d1eff4830adfe61af4b2df1c4a1.jpg" group-title="⭐️ Series Paramount",Marshals: Una historia de Yellowstone S01 E01
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564257.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Marshals: Una historia de Yellowstone S01 E02" tvg-logo="http://redworld.pro:8880/images/ed806b9d61e07cc17a1d9eaed345520b.jpg" group-title="⭐️ Series Paramount",Marshals: Una historia de Yellowstone S01 E02
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564258.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Marshals: Una historia de Yellowstone S01 E03" tvg-logo="http://redworld.pro:8880/images/501ab7031584aa338267a303f1ebd8c1.jpg" group-title="⭐️ Series Paramount",Marshals: Una historia de Yellowstone S01 E03
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564259.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Marshals: Una historia de Yellowstone S01 E04" tvg-logo="http://redworld.pro:8880/images/54968b3244ea27656b89d74b512995e3.jpg" group-title="⭐️ Series Paramount",Marshals: Una historia de Yellowstone S01 E04
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564260.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Marshals: Una historia de Yellowstone S01 E05" tvg-logo="http://redworld.pro:8880/images/2337f3cc85f7118625d6dcd47f3e94e1.jpg" group-title="⭐️ Series Paramount",Marshals: Una historia de Yellowstone S01 E05
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564261.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Marshals: Una historia de Yellowstone S01 E06" tvg-logo="http://redworld.pro:8880/images/69918f3f1db090e5ca3e652c14f5e09f.jpg" group-title="⭐️ Series Paramount",Marshals: Una historia de Yellowstone S01 E06
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564262.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Marshals: Una historia de Yellowstone S01 E07" tvg-logo="http://redworld.pro:8880/images/1c8eb1625b9d1574725ba22e07645044.jpg" group-title="⭐️ Series Paramount",Marshals: Una historia de Yellowstone S01 E07
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564263.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Marshals: Una historia de Yellowstone S01 E08" tvg-logo="http://redworld.pro:8880/images/940f841b7e365382f46ef71a21ed7074.jpg" group-title="⭐️ Series Paramount",Marshals: Una historia de Yellowstone S01 E08
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564264.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Marshals: Una historia de Yellowstone S01 E09" tvg-logo="http://redworld.pro:8880/images/822e1aa5db74f47a798384fbe84c8cf7.jpg" group-title="⭐️ Series Paramount",Marshals: Una historia de Yellowstone S01 E09
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564265.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Marshals: Una historia de Yellowstone S01 E10" tvg-logo="http://redworld.pro:8880/images/75901ab951ee96f04d23a2f17691696f.jpg" group-title="⭐️ Series Paramount",Marshals: Una historia de Yellowstone S01 E10
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564266.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Marshals: Una historia de Yellowstone S01 E11" tvg-logo="http://redworld.pro:8880/images/c2b370a2178f25f133052034941433ca.jpg" group-title="⭐️ Series Paramount",Marshals: Una historia de Yellowstone S01 E11
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564267.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Marshals: Una historia de Yellowstone S01 E12" tvg-logo="http://redworld.pro:8880/images/d6da29d86b4a0b1d42592604c3c1619a.jpg" group-title="⭐️ Series Paramount",Marshals: Una historia de Yellowstone S01 E12
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564268.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Marshals: Una historia de Yellowstone S01 E13" tvg-logo="http://redworld.pro:8880/images/3f1a53fb44bbd6b780a697da56ef695f.jpg" group-title="⭐️ Series Paramount",Marshals: Una historia de Yellowstone S01 E13
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564269.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Marshals: Una historia de Yellowstone S02 E01" tvg-logo="http://redworld.pro:8880/images/043e15d33671bfafd0ec31bae9cf09f4.jpg" group-title="⭐️ Series Paramount",Marshals: Una historia de Yellowstone S02 E01
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564270.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Aquel S01 E01" tvg-logo="http://redworld.pro:8880/images/388fdbe651d559c15f1e8b6a20e4480f.jpg" group-title="⭐️ Series Netflix ",Aquel S01 E01
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564280.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Aquel S01 E02" tvg-logo="http://redworld.pro:8880/images/388fdbe651d559c15f1e8b6a20e4480f.jpg" group-title="⭐️ Series Netflix ",Aquel S01 E02
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564281.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Aquel S01 E03" tvg-logo="http://redworld.pro:8880/images/388fdbe651d559c15f1e8b6a20e4480f.jpg" group-title="⭐️ Series Netflix ",Aquel S01 E03
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564282.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Aquel S01 E04" tvg-logo="http://redworld.pro:8880/images/388fdbe651d559c15f1e8b6a20e4480f.jpg" group-title="⭐️ Series Netflix ",Aquel S01 E04
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564283.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Aquel S01 E05" tvg-logo="http://redworld.pro:8880/images/388fdbe651d559c15f1e8b6a20e4480f.jpg" group-title="⭐️ Series Netflix ",Aquel S01 E05
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564284.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Aquel S01 E06" tvg-logo="http://redworld.pro:8880/images/388fdbe651d559c15f1e8b6a20e4480f.jpg" group-title="⭐️ Series Netflix ",Aquel S01 E06
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564285.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Aquel S01 E07" tvg-logo="http://redworld.pro:8880/images/388fdbe651d559c15f1e8b6a20e4480f.jpg" group-title="⭐️ Series Netflix ",Aquel S01 E07
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564286.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Aquel S01 E08" tvg-logo="http://redworld.pro:8880/images/388fdbe651d559c15f1e8b6a20e4480f.jpg" group-title="⭐️ Series Netflix ",Aquel S01 E08
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564287.mp4
+#EXTINF:-1 tvg-id="" tvg-name="La chispa del amor S01 E01" tvg-logo="http://redworld.pro:8880/images/bc15c395b89ab4f7ab3647d244570d2b.jpg" group-title="⭐️ Series Netflix ",La chispa del amor S01 E01
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564288.mp4
+#EXTINF:-1 tvg-id="" tvg-name="La chispa del amor S01 E02" tvg-logo="http://redworld.pro:8880/images/285f6a786407286a7a67e8416ad191c8.jpg" group-title="⭐️ Series Netflix ",La chispa del amor S01 E02
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564289.mp4
+#EXTINF:-1 tvg-id="" tvg-name="La chispa del amor S01 E03" tvg-logo="http://redworld.pro:8880/images/752d87e4aad3b91fee13108c2fc555ef.jpg" group-title="⭐️ Series Netflix ",La chispa del amor S01 E03
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564290.mp4
+#EXTINF:-1 tvg-id="" tvg-name="La chispa del amor S01 E04" tvg-logo="http://redworld.pro:8880/images/4ec83509decfc427333cf4cfb7a86607.jpg" group-title="⭐️ Series Netflix ",La chispa del amor S01 E04
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564291.mp4
+#EXTINF:-1 tvg-id="" tvg-name="La chispa del amor S01 E05" tvg-logo="http://redworld.pro:8880/images/2bd12c2cef7cbeee4951640c6f953165.jpg" group-title="⭐️ Series Netflix ",La chispa del amor S01 E05
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564292.mp4
+#EXTINF:-1 tvg-id="" tvg-name="La chispa del amor S01 E06" tvg-logo="http://redworld.pro:8880/images/3d2285d2ba46a0bbb6f7221505652575.jpg" group-title="⭐️ Series Netflix ",La chispa del amor S01 E06
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564293.mp4
+#EXTINF:-1 tvg-id="" tvg-name="La chispa del amor S01 E07" tvg-logo="http://redworld.pro:8880/images/c52ae59a06e26ba7e53a81ca10206285.jpg" group-title="⭐️ Series Netflix ",La chispa del amor S01 E07
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564294.mp4
+#EXTINF:-1 tvg-id="" tvg-name="La chispa del amor S01 E08" tvg-logo="http://redworld.pro:8880/images/c2f109294797d39e7f507c2c56d7c24d.jpg" group-title="⭐️ Series Netflix ",La chispa del amor S01 E08
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564295.mp4
+#EXTINF:-1 tvg-id="" tvg-name="La chispa del amor S01 E09" tvg-logo="http://redworld.pro:8880/images/f3f5c050b69f30e3319ea00564942fa3.jpg" group-title="⭐️ Series Netflix ",La chispa del amor S01 E09
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564296.mp4
+#EXTINF:-1 tvg-id="" tvg-name="La chispa del amor S01 E10" tvg-logo="http://redworld.pro:8880/images/d2da8f84ecfa3e66f4a131dbb32362ad.jpg" group-title="⭐️ Series Netflix ",La chispa del amor S01 E10
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564297.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Avatar: Los Siete Refugios S01 E01" tvg-logo="http://redworld.pro:8880/images/6d51ca5a0515277d644d27ae073e6230.jpg" group-title="⭐️ Series Paramount",Avatar: Los Siete Refugios S01 E01
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564298.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Avatar: Los Siete Refugios S01 E02" tvg-logo="http://redworld.pro:8880/images/26e1bb6bd1cd61de361da2f8d6958c3c.jpg" group-title="⭐️ Series Paramount",Avatar: Los Siete Refugios S01 E02
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564299.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Avatar: Los Siete Refugios S01 E03" tvg-logo="http://redworld.pro:8880/images/316b37b42333f021c7523beb4a9862a1.jpg" group-title="⭐️ Series Paramount",Avatar: Los Siete Refugios S01 E03
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564300.mp4
+#EXTINF:-1 tvg-id="" tvg-name="Doctora X S01 E01" tvg-logo="http://redworld.pro:8880/images/7636503a0b8b330a647719aee12f11aa.jpg" group-title="⭐️ Series Netflix ",Doctora X S01 E01
+http://redworld.pro:8880/series/56961941026f/ZqupFFd9hujH/564302.mp4
